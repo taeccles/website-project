@@ -74,25 +74,29 @@ img{
     padding: 20px;
 }
 
+/* this changes the width and height of the drink images */
 .drink-images{
     width: 80%;
     height: 70%;
 }
 
+/* this changes the elements inside the pastry container to fit on the same line and wrap together  */
 #pastries-menu{
     display: flex;
 }
 
+/* this changes the width of all the pastry images to be 80% of the container */
 .pastry-images{
     width: 80%;
 }
 
+/* this changes the width of all the elements inside the pastry container to be 33% of the container */
 .pastries{
     /* border: red 2px solid; */
     width: 33%;
 }
 
-/*  */
+/* this aligns the text to wrap around the owners image */
 .owners{
     /* border: red 2px solid; */
     display: flex;
