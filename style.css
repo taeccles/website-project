@@ -1,0 +1,142 @@
+/* this changes the fonts used for all the text and aligns all text to the centre */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+/* this changes the background colour of the navbar and creates spaces between each of the elements inside the navbar */
+#navbar {
+    background-color: #f4b766;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+/* this changes the colour of the text in the navbar, the font of the text in the navbar, and removes any underlining etc. from the text */
+#navbar a{
+    color: #2f332d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+/* this enables the text to change colour when the user hovers the mouse over the text inside the navbar */
+#navbar a:hover{
+    color: #fffdfa;
+}
+
+/* this changes the background colour of the body to be white */
+body{
+    background-color: #c4beb5;
+}
+
+/* this changes the width of all images to be 30% of the width of the webpage */
+img{
+    width: 30%;
+}
+
+/* adds space above the coffee bar image */
+#imgcoffeebar{
+    padding-top: 40px;
+}
+
+/* adds space above and below the beetroot drink image */
+#imgbeetroot{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* this changes the background colour of the footer and creates spaces between each of the elements inside the footer */
+#footer{
+    background-color: #f4b766;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    }
+
+/* this changes the colour of the text in the footer, the font of the text in the footer, and removes any underlining etc. from the text */     
+#footer a{
+    color: #2f332d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+/* this changes the footer links to turn white when the mouse hovers over them */ 
+#footer a:hover{
+    color: #fffdfa;
+}
+
+/* this creates padding around the container and wraps the drink images and text together on one line */
+#drinksmenu{
+    /* border: red 2px solid; */
+    display: flex;
+    padding: 20px;
+}
+
+.drink-images{
+    width: 80%;
+    height: 70%;
+}
+
+#pastries-menu{
+    display: flex;
+}
+
+.pastry-images{
+    width: 80%;
+}
+
+.pastries{
+    /* border: red 2px solid; */
+    width: 33%;
+}
+
+/*  */
+.owners{
+    /* border: red 2px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* changes the font size and width of the text next to the owner image */
+#ownertext{
+    /* border: blue 2px solid; */
+    font-size: 22px;
+    width: 60%;
+}
+
+/* changes the width of bakerstreet image to 50% and adds padding */
+#bakerstreet-image{
+    width: 50%;
+    padding: 20px;
+}
+
+/* changes the width and padding around the owners image */
+#ownerimg{
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+
+/* this is a media query which changes the navbar and footer fonts and heights when the minimum width of the screen size is 600px */
+@media screen and (min-width: 600px) {
+    #footer{
+        height:40px
+    }
+    #footer a{
+        font-size: 30px;
+    }
+    #navbar{
+        height: 40px;
+    }
+    #navbar a{
+        font-size: 30px;
+    }
+}
+    
+
+   
