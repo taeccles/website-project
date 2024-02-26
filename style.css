@@ -4,24 +4,35 @@
     text-align: center;
 }
 
-/* this changes the background colour of the navbar and creates spaces between each of the elements inside the navbar */
-#navbar {
+/* this changes the background colour and height of the navbar */
+.navbar{
     background-color: #f4b766;
-    display:flex;
-    justify-content: space-between;
-    justify-content: space-evenly;
-    justify-content: space-around;
+    height: 1.5rem;
+}
+
+/* changes the elements with the navbar-right class to align to the right and adds padding  */
+.navbar-right{
+    float: right;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+/* changes the element with the navbar-left id to align to the left and adds padding */
+#navbar-left{
+    float: left;
+    padding-left: 0.5rem;
 }
 
 /* this changes the colour of the text in the navbar, the font of the text in the navbar, and removes any underlining etc. from the text */
-#navbar a{
+.navbar a{
     color: #2f332d;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 /* this enables the text to change colour when the user hovers the mouse over the text inside the navbar */
-#navbar a:hover{
+.navbar a:hover{
     color: #fffdfa;
 }
 
@@ -32,22 +43,22 @@ body{
 
 /* this changes the width of all images to be 30% of the width of the webpage */
 img{
-    width: 30%;
+    width: 80%;
 }
 
 /* adds space above the coffee bar image */
 #imgcoffeebar{
-    padding-top: 40px;
+    padding-top: 1.3rem;
 }
 
 /* adds space above and below the beetroot drink image */
 #imgbeetroot{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0.4rem;
+    padding-bottom: 1rem;
 }
 
 /* this changes the background colour of the footer and creates spaces between each of the elements inside the footer */
-#footer{
+.footer{
     background-color: #f4b766;
     display:flex;
     justify-content: space-between;
@@ -56,22 +67,23 @@ img{
     }
 
 /* this changes the colour of the text in the footer, the font of the text in the footer, and removes any underlining etc. from the text */     
-#footer a{
+.footer a{
     color: #2f332d;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
+    font-size: 0.8rem;
 }
 
 /* this changes the footer links to turn white when the mouse hovers over them */ 
-#footer a:hover{
+.footer a:hover{
     color: #fffdfa;
 }
 
 /* this creates padding around the container and wraps the drink images and text together on one line */
 #drinksmenu{
-    /* border: red 2px solid; */
     display: flex;
-    padding: 20px;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
 }
 
 /* this changes the width and height of the drink images */
@@ -83,6 +95,7 @@ img{
 /* this changes the elements inside the pastry container to fit on the same line and wrap together  */
 #pastries-menu{
     display: flex;
+    padding: 1rem;
 }
 
 /* this changes the width of all the pastry images to be 80% of the container */
@@ -92,55 +105,111 @@ img{
 
 /* this changes the width of all the elements inside the pastry container to be 33% of the container */
 .pastries{
-    /* border: red 2px solid; */
     width: 33%;
 }
 
-/* this aligns the text to wrap around the owners image */
-.owners{
-    /* border: red 2px solid; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
 /* changes the font size and width of the text next to the owner image */
 #ownertext{
-    /* border: blue 2px solid; */
-    font-size: 22px;
-    width: 60%;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* changes the width of bakerstreet image to 50% and adds padding */
 #bakerstreet-image{
     width: 50%;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 /* changes the width and padding around the owners image */
 #ownerimg{
+    width: 70%;
+    padding: 0.5rem;
+}
+
+/* this is a media query which changes multiple elements when the minimum width of the screen size is 600px */
+@media screen and (min-width: 600px) {
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .footer{
+        height:2.5rem
+    }
+    .footer a{
+        font-size: 1.6rem;
+    }
+    .navbar{
+        height: 2.5rem;
+    }
+    .navbar a{
+        font-size: 1.8rem;
+    }
+    .navbar-right{
+        float: right;
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+    }
+    #navbar-left{
+        float: left;
+        padding-left: 2rem;
+    }
+    img{
+        width: 50%;
+    }
+    #imgcoffeebar{
+        padding-top: 2.5rem;
+    }
+    #imgbeetroot{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #drinksmenu{
+        display: flex;
+        padding: 2.5rem;
+    }
+    .owners{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    #ownertext{
+    font-size: 22px;
+    width: 60%;
+    }
+    #bakerstreet-image{
+    width: 40%;
+    padding: 20px;
+    }
+    #ownerimg{
     width: 30%;
     padding-top: 20px;
     padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    img{
+        width: 40%;
+    }
 }
 
-
-/* this is a media query which changes the navbar and footer fonts and heights when the minimum width of the screen size is 600px */
-@media screen and (min-width: 600px) {
-    #footer{
-        height:40px
+@media screen and (min-width: 1500px) {
+    img{
+        width: 20%;
     }
-    #footer a{
-        font-size: 30px;
-    }
-    #navbar{
-        height: 40px;
-    }
-    #navbar a{
-        font-size: 30px;
-    }
+    #bakerstreet-image{
+        width: 20%;
+        padding: 20px;
+        }
+    #ownerimg{
+        width: 25%;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        }
+    #ownertext{
+         font-size: 2rem;
+            width: 70%;
+        }
 }
-    
-
-   
+}
